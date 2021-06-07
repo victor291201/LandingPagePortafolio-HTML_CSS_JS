@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<!--!IMPORTANTE IMPORTANTE IMPORTANTE IMPORTANTE IMPORTANTE IMPORTANTE IMPORTANTE IMPORTANTE IMPORTANTE IMPORTANTE IMPORTANTE IMPORTANTE
+		para poder apreciar de manera optima la grid de las imagenes sin descargar ninguna libreria, porfavor 
+		utilizar FIREFOX
+		y HABILITAR la propiedad mansonry
+		ACCEDER en firefox a about:config en la barra de direcciones
+		ACEPTAR EL RIESGO SI SALE LA VENTANA
+		BUSCAR mansonry en la barra 
+		ESTABLECER EL VALOR COMO TRUE 
+		ESPERAR UN POCO Y RECARGAR LA PAGINA, HA CONSEGUIDO UN EFECTO MANSONRY SIN NECESIDAD DE LIBRERIAS
+-->
+<head>
+	<meta charset="utf-8">
+  <title>SNEAK</title>
+<!--!importamos las dependencias necesarias (iconos, la hoja de estilos, las fuentes y scripts)-->
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <LINK REL=StyleSheet HREF="estilo.css" TYPE="text/css" MEDIA=screen>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+	<script defer src="https://pro.fontawesome.com/releases/v5.10.0/js/all.js" integrity="sha384-G/ZR3ntz68JZrH4pfPJyRbjW+c0+ojii5f+GYiYwldYU69A+Ejat6yIfLSxljXxD" crossorigin="anonymous"></script>
+</head>
+<body class="contenedor">
+
+	<div>
+<!--!creamos el menu de navegacion-->	
+		<i onclick="toggle1()" class=" btnToggle fa fa-bars"></i>
+<!--!creamos el boton toggle de el menu responsivo para movil -->
+<!--!contenido del menu-->
+		<div class="nav toggle h100 w100">
+			<div class="lDivNav">
+				<img class="imgNav" src="./img/Logo1.png"/>
+			</div>
+			<div class="rDivNav">
+				<button class="btnSimple">All</button>
+				<button class="btnSimple">Branding</button>
+				<button class="btnSimple">Web</button>
+				<button class="btnSimple">Photography</button>
+				<button class="btnSimple">App</button>
+<!--!llamamos los iconos del menu-->		
+				<i class="fas fa-search"></i>
+			</div>
+		</div>
+<!--!creamos el algoritmo del toggle en el menu-->
+			<script>
+				function toggle1(){
+					var content1 = document.getElementsByClassName("nav");
+					var div1 = document.getElementsByClassName("lDivNav");
+					var div2 = document.getElementsByClassName("rDivNav");
+					var btn = document.getElementsByClassName("btnToggle");
+
+					console.log(content1[0])
+					if(document.getElementsByClassName("toggle")[0]!=undefined){
+							console.log("hola")
+							content1[0].classList.add("toggleActive");
+							content1[0].classList.remove("toggle");
+							div1[0].style.padding = "0px"
+							div2[0].style.padding = "0px"
+							btn[0].style.color ="#fe5576"
+					}
+					else{
+							content1[0].classList.remove("toggleActive");
+							content1[0].classList.add("toggle");
+							btn[0].style.color ="white"
+					}
+				}
+			</script>
+			
+		</div>
+	<div >
+<!--!creamos el banner-->
+		<div class="brand h100 w100">
+			<h1 class="titlBrand textWithe">EXPLORE BELLOND HORIZON</h1>
+			<p class="txtBrand textWithe">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+				Lorem Ipsum has been the industry's</p>
+				
+			<button class="btnBlanco btnBrand">VIEW YOUR WORK</button>
+		</div>
+	</div>
+	<div class="items">
+		<div class="iconsItems">
+<!--!llamamos los iconos del banner-->			
+			<i class="fas fa-th-large iconItem"></i>
+			<i class="fas fa-equals iconItem"></i>
+		</div>
+		<div class="btnsItems">
+			<button class="btnSimple btnItems">All</button>
+			<button class="btnSimple btnItems">Branding</button>
+			<button class="btnSimple btnItems">Web</button>
+			<button class="btnSimple btnItems">Photography</button>
+			<button class="btnSimple btnItems">App</button>
+		</div>
+
+<!--!creamos la grilla de el sistema de imagenes basado en css grid-->		
+		<div class="items h100 w100">
+			<div class="gridItems">
+				<div class="gridItem gridItem1">
+					<div class="divGridItem"><h3>CREATIVE LOGO</h3><hr class="barra"/><p>branding</p></div>
+				</div>
+				<div class="gridItem">
+					<div class="divGridItem"><h3>CREATIVE LOGO</h3><hr class="barra"/><p>branding</p></div>
+				</div>
+				<div class="gridItem gridItem2">
+					<div class="divGridItem"><h3>CREATIVE LOGO</h3><hr class="barra"/><p>branding</p></div>
+				</div>
+				<div class="gridItem ">
+					<div class="divGridItem"><h3>CREATIVE LOGO</h3><hr class="barra"/><p>branding</p></div>
+				</div>
+				<div class="gridItem">
+					<div class="divGridItem"><h3>CREATIVE LOGO</h3><hr class="barra"/><p>branding</p></div>
+				</div>
+				<div class="gridItem gridItem2">
+					<div class="divGridItem"><h3>CREATIVE LOGO</h3><hr class="barra"/><p>branding</p></div>
+				</div>
+				<div class="gridItem gridItem1">
+					<div class="divGridItem"><h3>CREATIVE LOGO</h3><hr class="barra"/><p>branding</p></div>
+				</div>
+				<div class="gridItem">
+					<div class="divGridItem"><h3>CREATIVE LOGO</h3><hr class="barra"/><p>branding</p></div>
+				</div>
+				<div class="gridItem">
+					<div class="divGridItem"><h3>CREATIVE LOGO</h3><hr class="barra"/><p>branding</p></div>
+				</div>
+			</div>
+		</div>
+			<button class="btnRosa">Show me more</button>
+	</div>
+	<div>
+<!--!creamos el footer-->	
+		<div class="footer h100 w100">
+			<p class="textoFooter">@ 2016 - <span  class="textoFooterSpan">Sneak</span> All Rigths Reserved</p>
+			<div class="btnsFooter">
+<!--!llamamos los iconos footer-->	
+				<i class="fab fa-facebook-f iconFooter"></i>
+				<i class="fab fa-google iconFooter"></i>
+				<i class="fab fa-youtube iconFooter"></i>
+				<i class="fab fa-twitter iconFooter"></i>
+				<i class="fab fa-dribbble iconFooter"></i>
+			</div>
+		</div>
+	</div>
+</body>

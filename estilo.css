@@ -1,0 +1,300 @@
+/*
+establecemos las fuentes de el documento
+*/
+body{
+    font-family: 'Questrial', sans-serif;
+    font-weight: 400;
+}
+/*
+creamos el sistema del contenedor
+*/
+.contenedor{
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 800px auto auto;
+}
+/*
+definimos el banner
+*/
+.brand{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fe5576;
+}
+.w100{
+    width: 100%;
+}
+.h100{
+    height: 100%;
+}
+.fa-magnifying-glass{
+    color:#fe5576;
+    size: 20px;
+    width: 20px;
+    height: 20px;
+}
+.textWithe{
+    color: white;
+}
+.barra{
+    height: 1px;
+    width:190px;
+    color: white;
+    background: white;
+	box-shadow: none;
+}
+.nav{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+/*
+alineamos el contenido del nav
+*/
+.lDivNav{
+    padding-left: 50px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.rDivNav{
+    padding-right: 50px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.imgNav{
+    cursor: pointer;
+}
+.fa-search{
+    padding: 10px 0px 10px 10px;
+    color:#7a7878;
+}
+.fa-search:hover{
+    color:#fe5576;
+}
+/*
+creamos los botones y animaciones de botones
+*/
+.btnToggle{
+    cursor: pointer;
+    padding: 10px 0px 0px 10px;
+    font-size: 25px;
+    display: none;
+    background: none;
+    color: white;
+}
+.btnRosa{
+    cursor: pointer;
+    display: inline-block;
+    background: #fe5576;
+    color:white;
+    border: none;
+    padding: 10px 30px;
+}
+.btnBlanco{
+    cursor: pointer;
+    display: inline-block;
+    background: white;
+    color:#fe5576;
+    border: none;
+    padding: 10px 30px;
+}
+.btnSimple{
+    cursor: pointer;
+    display: inline-block;
+    background: none;
+    color: #7a7878;
+    border: none;
+    padding: 10px 30px;
+}
+/*
+agregamos los efectos hover
+*/
+.btnSimple:hover{
+    display: inline-block;
+    background: #fe5576;
+    color:white;
+    border: none;
+    padding: 10px 30px;
+}
+.btnRosa:hover,.btnBlanco:hover{
+	-webkit-box-shadow: 1px 10px 6px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 10px 6px -4px rgba(0,0,0,0.75);
+	box-shadow: 1px 10px 6px -4px rgba(0,0,0,0.75);
+    border:none;
+	transform: scale(1.02);
+	transition:all ease 0.4s;
+}
+.titlBrand{
+    font-weight: 500;
+    letter-spacing: 15px;
+    word-spacing: 5px;
+    text-align: center;
+}
+.txtBrand{
+    width: 500px;
+    text-align: center;
+}
+.btnBrand{
+    margin-top: 3em;
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*
+agregamos el sistema de iconos de la grid
+*/
+.iconsItems{
+    margin:70px auto 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.iconItem{
+    cursor: pointer;
+    color:#fe5576;
+    font-size: 17px;
+    margin: 0px 8px;
+}
+.btnsItems{
+    margin:30px auto;
+    width: 34%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+/*
+personalizamos el sistema de grid
+*/
+.gridItems{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,300px);
+    justify-content: center;
+    grid-template-rows: masonry;
+    grid-gap: 10px;
+    margin:0px auto;
+    width: 80%;
+    height: 100%;
+    margin-bottom: 50px;
+}
+.gridItem{
+    width: 100%;
+    height: 400px;
+    background: #e1e1e1;
+}
+.divGridItem{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background: #fe5576;
+    color:white;
+    opacity: 0;
+    transition: all ease 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*
+agregamos animaciones a la grid
+*/
+.divGridItem:hover{
+    width: 100%;
+    height: 100%;
+    background: #fe5576;
+    color:white;
+    opacity: 1;
+    transition: all ease 1s;
+}
+.gridItem1{
+    height: 500px;
+}
+.gridItem2{
+    height: 300px;
+}
+/*
+creamos el footer
+*/
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+    transition:all ease 1s;
+}
+.textoFooter{
+    letter-spacing: 3px;
+    color:#b7b4b4;
+    font-weight: 400;
+    font-size: 12px;
+}
+.textoFooterSpan{
+    font-weight: bolder;
+    color:#fe5576;
+}
+/*
+creamos las clases para utilizar en los algoritmos de animaciones
+*/
+.btnsFooter{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+    margin-bottom: 80px;
+}
+.iconFooter{
+    cursor: pointer;
+    color:#b7b4b4;
+    font-size: 15px;
+    margin:0px 12px;
+}
+.iconFooter:hover{
+    color:#fe5576;
+}
+.toggleActive{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition:all ease 4s;
+}
+/*
+creamos los breack points para el contenido responsivo
+*/
+@media (max-Width:1400px){
+    .btnsItems{
+        flex-direction: column;
+    }
+    .btnItems{
+        margin: 5px 0px;
+    }
+}
+@media (max-width:900px) {
+    .rDivNav{
+        flex-direction: column;
+        margin:15px 0px;
+    }
+    .toggle{
+        display: none;
+        transition:all ease 4s;
+    }
+    .btnToggle{
+        display: inline;
+        position: absolute;
+        float:left;
+        transition:all ease 1s;
+    }
+}
